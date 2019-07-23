@@ -1,0 +1,49 @@
+/opt/cellranger-3.0.2/cellranger-cs/3.0.2/bin
+cellranger mkref (3.0.2)
+Copyright (c) 2019 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+
+Creating new reference folder at /home/ec2-user/pre-mrna/GRCh38-3.0.0_premrna
+...done
+
+Writing genome FASTA file into reference folder...
+...done
+
+Computing hash of genome FASTA file...
+...done
+
+Indexing genome FASTA file...
+...done
+
+Writing genes GTF file into reference folder...
+...done
+
+Computing hash of genes GTF file...
+...done
+
+Writing genes index file into reference folder (may take over 10 minutes for a 3Gb genome)...
+...done
+
+Writing genome metadata JSON file into reference folder...
+...done
+
+Generating STAR genome index (may take over 8 core hours for a 3Gb genome)...
+Jul 23 15:53:25 ..... Started STAR run
+Jul 23 15:53:25 ... Starting to generate Genome files
+Jul 23 15:54:36 ... starting to sort  Suffix Array. This may take a long time...
+Jul 23 15:54:42 ... sorting Suffix Array chunks and saving them to disk...
+Jul 23 16:48:19 ... loading chunks from disk, packing SA...
+Jul 23 16:48:44 ... Finished generating suffix array
+Jul 23 16:48:44 ... Generating Suffix Array index
+Jul 23 16:50:55 ... Completed Suffix Array index
+Jul 23 16:50:55 ..... Processing annotations GTF
+Jul 23 16:50:57 ... writing Genome to disk ...
+Jul 23 16:50:59 ... writing Suffix Array to disk ...
+Jul 23 16:51:04 ... writing SAindex to disk
+Jul 23 16:51:05 ..... Finished successfully
+...done.
+
+>>> Reference successfully created! <<<
+
+You can now specify this reference on the command line:
+cellranger --transcriptome=/home/ec2-user/pre-mrna/GRCh38-3.0.0_premrna ...
